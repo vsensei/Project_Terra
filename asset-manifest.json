@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Project_Terra/static/css/main.53f8108d.chunk.css",
+    "main.css": "/Project_Terra/static/css/main.9f616d94.chunk.css",
     "main.js": "/Project_Terra/static/js/main.03b2e487.chunk.js",
     "main.js.map": "/Project_Terra/static/js/main.03b2e487.chunk.js.map",
     "runtime-main.js": "/Project_Terra/static/js/runtime-main.3cff408e.js",
@@ -10,13 +10,13 @@
     "static/js/3.e9d3cd5b.chunk.js": "/Project_Terra/static/js/3.e9d3cd5b.chunk.js",
     "static/js/3.e9d3cd5b.chunk.js.map": "/Project_Terra/static/js/3.e9d3cd5b.chunk.js.map",
     "index.html": "/Project_Terra/index.html",
-    "static/css/main.53f8108d.chunk.css.map": "/Project_Terra/static/css/main.53f8108d.chunk.css.map",
+    "static/css/main.9f616d94.chunk.css.map": "/Project_Terra/static/css/main.9f616d94.chunk.css.map",
     "static/js/2.876a6c8e.chunk.js.LICENSE.txt": "/Project_Terra/static/js/2.876a6c8e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3cff408e.js",
     "static/js/2.876a6c8e.chunk.js",
-    "static/css/main.53f8108d.chunk.css",
+    "static/css/main.9f616d94.chunk.css",
     "static/js/main.03b2e487.chunk.js"
   ]
 }
