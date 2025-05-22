@@ -1,4 +1,5 @@
 export const githubProfile = 'https://github.com/vsensei/';
+export const linkedInProfile = 'https://www.linkedin.com/in/nikitamyagistu/';
 const projects = [
   {
     name: 'Project_Liminal',

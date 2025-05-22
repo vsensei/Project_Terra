@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.scss';
-import projects, { githubProfile } from 'information/projects';
+import projects, { githubProfile, linkedInProfile } from 'information/projects';
 import technologies from 'information/technologies';
 import MainInfo from 'components/main-info/main-info.component';
 import TechInfo from 'components/tech-info/tech-info.component';
@@ -84,6 +84,7 @@ function App() {
             filteredTechnologies={filteredTechnologies}
             setFilteredTechnologies={setFilteredTechnologies}
             githubProfile={githubProfile}
+            linkedInProfile={linkedInProfile}
           />
           <div className='projects-container'>{getProjects}</div>
         </div>

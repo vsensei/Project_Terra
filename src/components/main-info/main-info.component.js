@@ -10,6 +10,7 @@ const MainInfo = ({
   filteredTechnologies,
   setFilteredTechnologies,
   githubProfile,
+  linkedInProfile,
 }) => {
   const filterTechnologies = (tech) => () => {
     setFilteredTechnologies({
@@ -27,7 +28,7 @@ const MainInfo = ({
 
   return (
     <div className='maininfo'>
-      <div className='headline'>full-stack web developer</div>
+      <div className='headline'>Web Developer</div>
       <div className='about'>
         <div className='avatar'>
           <Link href={githubProfile}>
@@ -35,11 +36,16 @@ const MainInfo = ({
           </Link>
         </div>
         <div className='my-info'>
-          <span>Nikita Mägistu</span>
-          <Link href={githubProfile}>
-            <i>@vsensei</i>
-          </Link>
-          <span>{profileInfo}</span>
+          <p className='name'>Nikita Mägistu</p>
+          <p>
+            Github:
+            <Link href={githubProfile}>@vsensei</Link>
+          </p>
+          <p>
+            LinkedIn:
+            <Link href={linkedInProfile}>@nikitamyagistu</Link>
+          </p>
+          <p>{profileInfo}</p>
         </div>
       </div>
       <TechInfo
