@@ -5,6 +5,10 @@
 .tech-info-container {
   @extend %flex-wrap-container-hor-cent;
 
+  @media screen and (orientation: portrait) and (max-width: 600px) {
+    gap: 10px 4px;
+  }
+
   .tech-info {
     @extend %centtext;
     @extend %defaulttransition;
@@ -16,9 +20,10 @@
     border: 1px solid vars.$shadowcolor;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 14px;
     box-shadow: 2px 2px 0 vars.$shadowcolor;
     height: 30px;
-    padding: 0 5px;
+    padding: 4px 10px;
     max-width: fit-content;
     cursor: default;
 

@@ -20,10 +20,6 @@
     justify-content: center;
     gap: 10%;
 
-    @media screen and (orientation: portrait) and (max-width: 600px) {
-      height: 25vh;
-    }
-
     .avatar {
       @extend %fullheight;
       @extend %columnflex;
@@ -39,7 +35,18 @@
     .my-info {
       @extend %columnflex;
       justify-content: space-around;
+      row-gap: 8px;
       width: 50%;
+
+      .name {
+        font-size: 20px;
+        color: white;
+      }
+
+      a {
+        margin-left: 6px;
+        font-style: italic;
+      }
     }
   }
 }

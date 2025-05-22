@@ -1,4 +1,5 @@
-const profileInfo =
-  'In projects I use React, Redux, Redux-sagas, NodeJS, Express/Hapi. You can check out my projects and their source code below.';
+const profileInfo = `Web application developer with a four year track record in using diverse
+frontend and backend technologies. Proficient in developing responsive and dynamic
+user interfaces, using Ember.js, React and Node.js.`;
 
 export default profileInfo;
