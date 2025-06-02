@@ -1,0 +1,18 @@
+.button {
+  background-color: #59406f;
+  box-shadow: 2px 2px 2px #191919;
+  color: #e8e5ea;
+  font-weight: 600;
+  border: none;
+  width: 100%;
+
+  &:hover {
+    border: none;
+    background-color: #7a5799;
+  }
+
+  &:disabled {
+    background-color: rgb(56, 56, 56);
+    color: grey;
+  }
+}

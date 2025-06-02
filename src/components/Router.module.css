@@ -1,0 +1,17 @@
+.router {
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 450px;
+  column-gap: 14px;
+
+  button {
+    width: 100%;
+    min-width: 90px;
+    max-width: 120px;
+  }
+}
+
+.pdfViewer {
+  margin-top: 10px;
+}

@@ -1,0 +1,57 @@
+export type ProjectInfo = {
+  name: string;
+  screenshot: string;
+  projectlink: string;
+  githublink: string;
+  logo: `${string}.svg`;
+  technologies: Technology[];
+  description: string;
+};
+
+export type Technology =
+  | 'javascript'
+  | 'typescript'
+  | 'ember.js'
+  | 'react'
+  | 'next.js'
+  | 'redux'
+  | 'node.js'
+  | 'express'
+  | 'scss'
+  | 'postcss'
+  | 'css'
+  | 'qunit'
+  | 'sinon'
+  | 'mssql'
+  | 'mysql'
+  | 'postgresql'
+  | 'mongodb'
+  | 'firestore'
+  | 'firebase'
+  | 'redis'
+  | 'google apps script'
+  | 'chrome extensions'
+  | 'c#'
+  | 'php'
+  | 'html'
+  | 'handlebars'
+  | 'smarty'
+  | 'redux-saga'
+  | 'react-native'
+  | 'hapi'
+  | 'jwt'
+  | 'git'
+  | 'playwright'
+  | 'jquery'
+  | 'webaudio api'
+  | 'webasyst'
+  | 'winforms';
+
+export type ExperienceInfo = {
+  positionName: string;
+  employer: string;
+  time: string;
+  summary: string;
+  descriptionLines: string[];
+  technologies: Technology[];
+};
