@@ -1,0 +1,9 @@
+.pdfViewer {
+  margin-top: 10px;
+}
+
+.downloadLink {
+  max-width: 180px;
+  display: block;
+  margin-left: auto;
+}

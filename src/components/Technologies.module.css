@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  margin: 0 auto;
+  overflow-y: hidden;
+  padding-bottom: 2px;
+
+  &.collapsed {
+    padding-bottom: 0;
+  }
+}
+
+.techInfo {
+  justify-content: center;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 4px 6px;
+  background-color: #4e484e;
+  color: #cfbedb;
+}

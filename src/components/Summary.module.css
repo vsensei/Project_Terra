@@ -1,0 +1,43 @@
+.mainInfo {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+
+  > a {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .about > a {
+    display: none;
+  }
+}
+
+.avatar {
+  border: 2px solid #000;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  box-shadow: 0px 0px 20px violet;
+  transition: box-shadow 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  &:hover {
+    box-shadow: 0px 0px 30px violet;
+  }
+}
+
+.bio {
+  text-align: start;
+
+  a {
+    font-style: italic;
+    margin-left: 4px;
+  }
+}
