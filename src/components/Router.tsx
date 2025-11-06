@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import { SECTIONS } from 'const/sections';
+import { useState } from 'react';
 import Experience from './sections/Experience';
 import Projects from './sections/Projects';
 import Resume from './sections/Resume';

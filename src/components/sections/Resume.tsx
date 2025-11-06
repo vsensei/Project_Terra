@@ -1,6 +1,6 @@
-import { useRef, useState } from 'react';
 import cvPdf from 'assets/cv.pdf';
 import Button from 'components/shared/Button';
+import { useRef, useState } from 'react';
 
 import styles from './Resume.module.css';
 
