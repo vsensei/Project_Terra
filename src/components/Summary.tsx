@@ -1,8 +1,10 @@
-import { githubLink, linkedInLink, summaryData } from 'data/profileinfo';
-import technologiesData from 'data/technologies';
+import { portfolioFallback } from 'data/portfolioFallback';
+import { githubLink, linkedInLink } from 'data/profileInfo';
 import Technologies from './Technologies';
 
 import styles from './Summary.module.css';
+
+const { summary, technologies } = portfolioFallback;
 
 export default function Summary() {
   return (
@@ -15,7 +17,11 @@ export default function Summary() {
           target='_blank'
           rel='noreferrer nofollow'
         >
-          <img className={styles.avatar} src="https://avatars.githubusercontent.com/u/68127517?v=4" alt='avatar' />
+          <img
+            className={styles.avatar}
+            src='https://avatars.githubusercontent.com/u/68127517?v=4'
+            alt='avatar'
+          />
         </a>
         <div className={styles.bio}>
           <h2>Nikita Mägistu</h2>
@@ -41,10 +47,10 @@ export default function Summary() {
               @nikitamyagistu
             </a>
           </p>
-          <p>{summaryData}</p>
+          <p>{summary}</p>
         </div>
       </div>
-      <Technologies technologies={technologiesData} />
+      <Technologies technologies={technologies} />
     </div>
   );
 }
