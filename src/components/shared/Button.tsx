@@ -1,6 +1,6 @@
 import styles from './Button.module.css';
 
-type ButtonArgs = {
+type ButtonProps = {
   text: string;
   handleClick?: () => void;
   isDisabled?: boolean;
@@ -10,7 +10,7 @@ export default function Button({
   text,
   handleClick,
   isDisabled = false,
-}: ButtonArgs) {
+}: ButtonProps) {
   return (
     <button
       className={styles.button}

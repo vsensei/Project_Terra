@@ -1,6 +1,6 @@
 import { SECTIONS } from 'const/sections';
 import { useState } from 'react';
-import Experience from './sections/Experience';
+import Position from './sections/Position';
 import Projects from './sections/Projects';
 import Resume from './sections/Resume';
 import Button from './shared/Button';
@@ -8,7 +8,7 @@ import Button from './shared/Button';
 import styles from './Router.module.css';
 
 const router = {
-  [SECTIONS.Experience]: <Experience />,
+  [SECTIONS.Position]: <Position />,
   [SECTIONS.Projects]: <Projects />,
   [SECTIONS.CV]: <Resume />,
 } as const;
@@ -16,7 +16,7 @@ const routerSections = [...Object.keys(router)] as (keyof typeof SECTIONS)[];
 
 export default function Router() {
   const [selectedRoute, setSelectedRoute] = useState<keyof typeof SECTIONS>(
-    SECTIONS.Experience
+    SECTIONS.Position
   );
   const handleRouteChange = (routeName: keyof typeof SECTIONS) => {
     setSelectedRoute(SECTIONS[routeName]);

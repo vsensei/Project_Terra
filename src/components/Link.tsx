@@ -1,11 +1,11 @@
 import styles from './Link.module.css';
 
-type LinkArgs = {
+type LinkProps = {
   href: string;
   image?: string;
 };
 
-const Link = ({ href, image }: LinkArgs) => {
+const Link = ({ href, image }: LinkProps) => {
   return (
     <a
       className={styles.link}

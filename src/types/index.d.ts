@@ -1,4 +1,4 @@
-export type ProjectInfo = {
+export type ProjectData = {
   name: string;
   screenshot: string;
   projectlink: string;
@@ -8,17 +8,11 @@ export type ProjectInfo = {
   description: string;
 };
 
-export type ExperienceInfo = {
+export type PositionData = {
   positionName: string;
   employer: string;
   time: string;
   summary: string;
   rawDescription: string;
   technologies: Technology[];
-};
-
-export type PortfolioData = {
-  positions: ExperienceInfo[];
-  technologies: string[];
-  summary: string;
 };

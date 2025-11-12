@@ -1,16 +1,16 @@
+import githubLogo from 'assets/images/github-logo.svg';
 import Link from './Link';
 import Technologies from './Technologies';
-import githubLogo from 'assets/images/github-logo.svg';
 
 import styles from './Project.module.css';
 
-import type { ProjectInfo } from 'types';
+import type { ProjectData } from 'types';
 
-type ProjectArgs = {
-  projectData: ProjectInfo;
+type ProjectProps = {
+  projectData: ProjectData;
 };
 
-export default function Project({ projectData }: ProjectArgs) {
+export default function Project({ projectData }: ProjectProps) {
   const {
     screenshot,
     projectlink,
