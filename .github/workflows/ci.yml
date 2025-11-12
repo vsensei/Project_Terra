@@ -46,6 +46,8 @@ jobs:
           VITE_FIREBASE_AUTH_DOMAIN: ${{ secrets.FIREBASE_AUTH_DOMAIN }}
           VITE_FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
           VITE_FIREBASE_STORAGE_BUCKET: ${{ secrets.FIREBASE_STORAGE_BUCKET }}
+          VITE_PORTFOLIO_SUMMARY: ${{ vars.VITE_PORTFOLIO_SUMMARY }}
+          VITE_PORTFOLIO_TECHNOLOGIES: ${{ vars.VITE_PORTFOLIO_TECHNOLOGIES }}
         run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v5
