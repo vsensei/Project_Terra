@@ -1,10 +1,10 @@
-import { portfolioFallback } from 'data/portfolioFallback';
+import { summaryFallback } from 'data/portfolioFallback';
 import { githubLink, linkedInLink } from 'data/profileInfo';
+import { parseTechnologies } from 'utils/env';
+import { parseStringWithNewlines } from 'utils/string';
 import Technologies from './Technologies';
 
 import styles from './Summary.module.css';
-
-const { summary, technologies } = portfolioFallback;
 
 export default function Summary() {
   return (
@@ -47,10 +47,13 @@ export default function Summary() {
               @nikitamyagistu
             </a>
           </p>
-          <p>{summary}</p>
+          <p>
+            {parseStringWithNewlines(import.meta.env.VITE_PORTFOLIO_SUMMARY) ||
+              summaryFallback}
+          </p>
         </div>
       </div>
-      <Technologies technologies={technologies} />
+      <Technologies technologies={parseTechnologies()} />
     </div>
   );
 }

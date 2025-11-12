@@ -1,6 +1,6 @@
 import Router from 'components/Router';
 import Summary from 'components/Summary';
-import PortfolioDataProvider from 'contexts/PortfolioDataProvider';
+import PortfolioDataProvider from 'contexts/PositionsDataProvider';
 
 import './App.css';
 

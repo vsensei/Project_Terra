@@ -1,5 +1,5 @@
 export const SECTIONS = {
-  Experience: 'Experience',
+  Position: 'Position',
   Projects: 'Projects',
   CV: 'CV',
 } as const;

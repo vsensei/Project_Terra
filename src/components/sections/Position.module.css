@@ -1,0 +1,33 @@
+.experience {
+  text-align: left;
+}
+
+.panel {
+  border: 2px solid #191919;
+  border-radius: 14px;
+  box-shadow: 2px 2px 0 #191919;
+  background-color: rgb(41, 41, 49);
+  overflow: hidden;
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+
+  .container {
+    padding: 10px;
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      color: rgb(198, 107, 198);
+      font-weight: 600;
+      font-size: 17px;
+    }
+
+    @media screen and (max-width: 500px) {
+      .info p {
+        max-width: 80px;
+      }
+    }
+  }
+}

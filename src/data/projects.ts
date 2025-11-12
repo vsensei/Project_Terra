@@ -1,6 +1,6 @@
-import type { ProjectInfo } from 'types';
+import type { ProjectData } from 'types';
 
-const projectsData: ProjectInfo[] = [
+const projectsData: ProjectData[] = [
   {
     name: 'Project_Liminal',
     screenshot: 'project_liminal_screen.png',

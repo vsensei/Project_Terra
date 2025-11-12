@@ -1,10 +1,10 @@
 import styles from './Technologies.module.css';
 
-type TechInfoArgs = {
+type TechInfoProps = {
   technologies?: string[];
 };
 
-export default function Technologies({ technologies }: TechInfoArgs) {
+export default function Technologies({ technologies }: TechInfoProps) {
   return (
     <div className={styles.container}>
       {technologies &&

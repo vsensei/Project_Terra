@@ -1,6 +1,6 @@
-import type { ExperienceInfo, PortfolioData } from 'types';
+import type { PositionData } from 'types';
 
-const positions: ExperienceInfo[] = [
+export const positionsFallback: PositionData[] = [
   {
     rawDescription:
       '#$ Developed new functionality using React, Ember.js and Handlebars. Actively participated in solution architecture design and implementation. Proactively participated in backlog refinement, planning and demos.\n#$ Successfully took on a Team-lead role for a group of 3 developers. Discussed solutions, estimated tickets, performed code reviews and closely cooperated with the team members. Trained and guided intern UI developers in internal working procedures and technical questions. Managed to create a friendly environment in the team, which helped to solve all the occurring problems.\n#$ Refactored the existing components and converted 100% of the engine to TypeScript to make it more reliable and easy-maintained.\n#$ Improved test coverage from 30% to 92% (unit, acceptance, functional, rendering, integration, E2E Playwright tests) to assure the quality of the new features.\n#$ Discussed the discovered UI and Email issues with the QA Team to provide fixes for the most critical defects as fast as possible.\n#$ Configured A/B tests using Optimizely to evaluate customers’ involvement and determine the most profitable features.\n#$ Developed the data processing and PDF parser backend solutions using Node.js, performed the updates on Google Cloud App Engine. These projects helped to  significantly reduce labour costs on working with timesheets and were highly appreciated by the managers.\n#$ Created and updated email templates using Handlebars on SendGrid to maintain the company’s email sendout.\n#$ Created a VSCode helper extension to make email development easier and quicker.\n#$ Contributed to an open source project (DefinitelyTyped) to fulfil the work needs.',
@@ -81,7 +81,7 @@ const positions: ExperienceInfo[] = [
   },
 ];
 
-const technologies: string[] = [
+export const technologiesFallback: string[] = [
   'JavaScript',
   'TypeScript',
   'Ember.js',
@@ -119,9 +119,5 @@ const technologies: string[] = [
   'Git',
 ];
 
-export const portfolioFallback: PortfolioData = {
-  positions,
-  technologies,
-  summary:
-    'Web application developer with a four year track record in using diverse\nfrontend and backend technologies. Proficient in developing responsive and dynamic\nuser interfaces, using Ember.js, React and Node.js.',
-};
+export const summaryFallback =
+  'Web application developer with a four year track record in using diverse\nfrontend and backend technologies. Proficient in developing responsive and dynamic\nuser interfaces, using Ember.js, React and Node.js.';
