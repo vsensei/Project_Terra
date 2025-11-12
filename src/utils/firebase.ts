@@ -1,4 +1,4 @@
-import { collection, doc, getDoc } from 'firebase/firestore';
+import { collection, doc, getDoc } from 'firebase/firestore/lite';
 import { db } from 'lib/firebase';
 
 import type { PositionData } from 'types';
