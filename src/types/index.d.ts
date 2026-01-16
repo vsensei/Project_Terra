@@ -1,8 +1,8 @@
 export type ProjectData = {
   name: string;
   screenshot: string;
-  projectlink: string;
-  githublink: string;
+  projectLink: string;
+  projectGithubName: string;
   logo: `${string}.svg`;
   technologies: Technology[];
   description: string;

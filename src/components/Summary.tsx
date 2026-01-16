@@ -9,7 +9,7 @@ import styles from './Summary.module.css';
 export default function Summary() {
   return (
     <div className={styles.mainInfo}>
-      <h1>Web Developer</h1>
+      <h1>Frontend Developer | Full-stack Developer</h1>
       <div className={styles.about}>
         <a
           href={githubLink}

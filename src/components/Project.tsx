@@ -4,6 +4,7 @@ import Technologies from './Technologies';
 
 import styles from './Project.module.css';
 
+import { githubLink } from 'src/data/profileInfo';
 import type { ProjectData } from 'types';
 
 type ProjectProps = {
@@ -13,14 +14,14 @@ type ProjectProps = {
 export default function Project({ projectData }: ProjectProps) {
   const {
     screenshot,
-    projectlink,
-    githublink,
+    projectLink,
+    projectGithubName,
     logo,
     technologies,
     name,
     description,
   } = projectData;
-  const shouldDisplay = screenshot && projectlink && logo;
+  const shouldDisplay = screenshot && projectLink && logo;
 
   return shouldDisplay ? (
     <div
@@ -36,7 +37,10 @@ export default function Project({ projectData }: ProjectProps) {
           <div>
             <Technologies technologies={technologies} />
             <div className={styles.links}>
-              <Link href={`${githublink}${githublink}`} image={githubLogo} />
+              <Link
+                href={`${githubLink}${projectGithubName}`}
+                image={githubLogo}
+              />
             </div>
           </div>
         </div>

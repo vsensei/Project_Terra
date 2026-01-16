@@ -2,10 +2,27 @@ import type { ProjectData } from 'types';
 
 const projectsData: ProjectData[] = [
   {
+    name: 'Estransport',
+    screenshot: 'project_estransport.png',
+    projectLink: '_',
+    projectGithubName: 'estransport',
+    logo: 'project_liminal.svg',
+    technologies: [
+      'react',
+      'typescript',
+      'redux toolkit',
+      'leaflet',
+      'react-leaflet',
+      'openstreetmap',
+    ],
+    description:
+      'Open-source search and routing for public transport in Estonia.',
+  },
+  {
     name: 'Project_Liminal',
     screenshot: 'project_liminal_screen.png',
-    projectlink: '_',
-    githublink: 'Project_Liminal',
+    projectLink: '_',
+    projectGithubName: 'Project_Liminal',
     logo: 'project_liminal.svg',
     technologies: ['react', 'redux', 'postgresql', 'redis', 'scss'],
     description:
@@ -14,8 +31,8 @@ const projectsData: ProjectData[] = [
   {
     name: 'Project_Build',
     screenshot: 'project_build_screen.png',
-    projectlink: '_',
-    githublink: 'project-build',
+    projectLink: '_',
+    projectGithubName: 'project-build',
     logo: 'project_build.svg',
     technologies: ['react', 'next.js', 'firebase', 'scss'],
     description:
@@ -24,8 +41,8 @@ const projectsData: ProjectData[] = [
   {
     name: 'Project_Ceres',
     screenshot: 'project_ceres_screen.png',
-    projectlink: '_',
-    githublink: 'Project_Ceres',
+    projectLink: '_',
+    projectGithubName: 'Project_Ceres',
     logo: 'project_ceres.svg',
     technologies: ['react', 'redux', 'firebase', 'scss', 'typescript'],
     description:
@@ -34,8 +51,8 @@ const projectsData: ProjectData[] = [
   {
     name: 'Project_Vesta',
     screenshot: 'project_vesta_screen.png',
-    projectlink: 'https://github.com/vsensei/project_Vesta',
-    githublink: 'project_vesta',
+    projectLink: '_',
+    projectGithubName: 'project_vesta',
     logo: 'project_vesta.svg',
     technologies: ['react', 'react-native'],
     description: 'This is a test react-native chat project',
