@@ -16,3 +16,10 @@ export type PositionData = {
   rawDescription: string;
   technologies: Technology[];
 };
+
+export type AppDataFirebaseResponse = {
+  positions?: PositionData[];
+  projects?: ProjectData[];
+} | null;
+
+export type AppData = { positions: PositionData[]; projects: ProjectData[] };

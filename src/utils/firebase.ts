@@ -1,28 +1,33 @@
 import { collection, doc, getDoc } from 'firebase/firestore/lite';
 import { db } from 'lib/firebase';
 
-import type { PositionData } from 'types';
+import type { AppData, AppDataFirebaseResponse } from 'types';
 
-export const fetchPositionsData = async (): Promise<PositionData[] | null> => {
+export const fetchAppData = async (): Promise<AppData | null> => {
   try {
-    const portfolioDataDoc = await getDoc(
-      doc(collection(db, 'portfolio'), 'portfolioData')
+    const appDataDoc = await getDoc(
+      doc(collection(db, 'portfolio'), 'portfolioData'),
     );
-    const portfolioData = portfolioDataDoc.data();
+    const appData = appDataDoc.data() as AppDataFirebaseResponse;
 
     if (
-      !portfolioData ||
-      !portfolioData.positions ||
-      !Array.isArray(portfolioData.positions)
+      !appData ||
+      !appData.positions ||
+      !appData.projects ||
+      !Array.isArray(appData.positions) ||
+      !Array.isArray(appData.projects)
     ) {
-      throw new Error('No valid positions data');
+      throw new Error('No valid app data');
     }
 
-    return portfolioData.positions;
+    return {
+      positions: appData.positions,
+      projects: appData.projects,
+    };
   } catch (err) {
     console.error(
       'Could not fetch data from Firebase. Falling back to default, the information might be oudated.',
-      err
+      err,
     );
 
     return null;

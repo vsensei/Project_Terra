@@ -1,8 +1,8 @@
 import type { ProjectData } from 'types';
 
-const projectsData: ProjectData[] = [
+const projectsFallback: ProjectData[] = [
   {
-    name: 'Estransport',
+    name: 'Estransport [Client]',
     screenshot: 'project_estransport.png',
     projectLink: '_',
     projectGithubName: 'estransport',
@@ -17,6 +17,16 @@ const projectsData: ProjectData[] = [
     ],
     description:
       'Open-source search and routing for public transport in Estonia.',
+  },
+  {
+    name: 'Estransport [Server]',
+    screenshot: 'project_estransport.png',
+    projectLink: '_',
+    projectGithubName: 'estransport-server',
+    logo: 'project_liminal.svg',
+    technologies: ['node.js', 'express.js', 'typescript'],
+    description:
+      'Server for the open-source search and routing for public transport in Estonia.',
   },
   {
     name: 'Project_Liminal',
@@ -59,4 +69,4 @@ const projectsData: ProjectData[] = [
   },
 ];
 
-export default projectsData;
+export default projectsFallback;

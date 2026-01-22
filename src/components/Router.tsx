@@ -16,7 +16,7 @@ const routerSections = [...Object.keys(router)] as (keyof typeof SECTIONS)[];
 
 export default function Router() {
   const [selectedRoute, setSelectedRoute] = useState<keyof typeof SECTIONS>(
-    SECTIONS.Position
+    SECTIONS.Position,
   );
   const handleRouteChange = (routeName: keyof typeof SECTIONS) => {
     setSelectedRoute(SECTIONS[routeName]);

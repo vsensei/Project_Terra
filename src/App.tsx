@@ -1,16 +1,16 @@
 import Router from 'components/Router';
 import Summary from 'components/Summary';
-import PortfolioDataProvider from 'contexts/PositionsDataProvider';
+import AppDataProvider from 'contexts/AppDataProvider';
 
 import './App.css';
 
 function App() {
   return (
     <div className='app'>
-      <PortfolioDataProvider>
+      <AppDataProvider>
         <Summary />
         <Router />
-      </PortfolioDataProvider>
+      </AppDataProvider>
     </div>
   );
 }
