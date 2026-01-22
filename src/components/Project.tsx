@@ -1,11 +1,11 @@
 import githubLogo from 'assets/images/github-logo.svg';
+import { githubLink } from 'data/profileInfo';
 import Link from './Link';
 import Technologies from './Technologies';
 
-import styles from './Project.module.css';
-
-import { githubLink } from 'src/data/profileInfo';
 import type { ProjectData } from 'types';
+
+import styles from './Project.module.css';
 
 type ProjectProps = {
   projectData: ProjectData;

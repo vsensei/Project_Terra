@@ -6,7 +6,7 @@ export const parseTechnologies = () => {
   } catch (err) {
     console.error(
       'Error while parsing technologies, falling back to default',
-      err
+      err,
     );
   }
 

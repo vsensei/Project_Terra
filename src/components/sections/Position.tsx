@@ -1,21 +1,22 @@
-import PositionsDataContext from 'contexts/PositionsDataContext';
+import Blur from 'components/shared/Blur';
+import Technologies from 'components/Technologies';
+import AppDataContext from 'contexts/AppDataContext';
 import { useContext } from 'react';
 import { convertMarkedStringToArray } from 'utils/string';
-import Technologies from '../Technologies';
 
-import type { PositionsDataContextType } from 'contexts/PositionsDataContext';
+import type { AppDataContextType } from 'contexts/AppDataContext';
 
-import Blur from '../shared/Blur';
 import styles from './Position.module.css';
 
 export default function Position() {
-  const { positions, isPositionsDataBlurred } = useContext(
-    PositionsDataContext
-  ) as PositionsDataContextType;
+  const {
+    appData: { positions },
+    isPositionsDataBlurred,
+  } = useContext(AppDataContext) as AppDataContextType;
 
   return (
     <div className={styles.experience}>
-      <h2>Work Position</h2>
+      <h2>Work Experience</h2>
       {positions.map(
         ({
           positionName,
@@ -39,7 +40,7 @@ export default function Position() {
                     {convertMarkedStringToArray(rawDescription).map(
                       (descriptionLine) => (
                         <li key={descriptionLine}>{descriptionLine}</li>
-                      )
+                      ),
                     )}
                   </ul>
                   <div>
@@ -52,7 +53,7 @@ export default function Position() {
               </Blur>
             </div>
           );
-        }
+        },
       )}
     </div>
   );
